@@ -5,6 +5,10 @@ import profileImage from '../assets/profile.jpg';
 const Home = () => {
   return (
     <div className="home-container">
+      <div className="right-panel">
+        <img src={profileImage} alt="profile" className="profile-img" />
+      </div>
+
       <div className="left-panel">
         <p className="tagline">Full Stack Web Developer</p>
         <h1 className="name">Surendhar K</h1>
@@ -20,23 +24,17 @@ const Home = () => {
           <h3>☁️ Cloud deployment with AWS & Netlify</h3>
         </ul>
         <br/>
-        <button className="hello-btn"><a
-  href="https://www.linkedin.com/in/surendhar-k-9477b9256/"  
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hello-btn"
->
-  Let's Connect
-</a>
-</button>
-      </div>
-
-      <div className="right-panel">
-        <img src={profileImage} alt="profile" className="profile-img" />
+        <a
+          href="https://www.linkedin.com/in/surendhar-k-9477b9256/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hello-btn"
+        >
+          Let's Connect
+        </a>
       </div>
     </div>
   );
 };
 
 export default Home;
-
